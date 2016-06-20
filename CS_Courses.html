@@ -2,241 +2,459 @@
 <html>
 <head>
 <title>UBC_CS_COURSES</title>
+<style>
+a:link    {color: RoyalBlue; backgroud-color:transparent; text-decoration:none; }
+a:visited {color: Navy; backgroud-color:transparent; text-decoration:none; }
+a:hover {color: RoyalBlue; backgroud-color:transparent; text-decoration:underline; }
+a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underline; }
+
+#courses {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#courses caption {
+	font-size: 28px;
+}
+#courses td, #courses th {
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 8px;
+}
+
+#courses tr:nth-child(even){
+	background-color: #F2F2F2;
+}
+
+#courses tr:hover{
+	background-color: #ddd;
+}
+
+#courses th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #6495ED;
+	color: white;
+}
+
+#header {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #6495ED;
+	color: black;
+	text-align: left;
+	padding: 5px;
+}
+
+#footer {
+	background-color: #6495ED;
+	color: black;
+	clear: both;
+	text-align: right;
+	padding: 5px;
+}
+
+#section2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #6495ED;
+	padding: 5px;
+}
+
+#section3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #F2F2F2;
+	padding: 5px;
+}
+
+#section4 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 5px;
+}
+</style>
 </head>
 <body>
-<h2>List of Courses</h2>
-<table border="1">
+<div id="header">
+<h2>Undergraduate Computer Science Courses</h2>
+</div>
+
+<div id="section1">
+<table id="courses">
     <tr>
 	    <th>Course Number</th>
 		<th>Course Name</th>
 		<th>Mark</th>
 	</tr>
 	<tr>
-		<td>CPSC 100</td>
+		<td><a href="#cs100">CPSC 100</a></td>
 		<td>Computational Thinking</td>
-		<td>intro</td>
+		<td><a href="#intro">intro</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 103</td>
+		<td><a href="#cs103">CPSC 103</a></td>
 		<td>Introduction to Systematic Program Design</td>
-		<td>intro</td>
+		<td><a href="#intro">intro</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 110</td>
+		<td><a href="#cs110">CPSC 110</a></td>
 		<td>Computation, Programs, and Programming</td>
-		<td>core, challenge</td>
+		<td><a href="#core">*core*</a>, <a href="#chal-exm">chal-exm</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 121</td>
+		<td><a href="#cs121">CPSC 121</a></td>
 		<td>Models of Computation</td>
-		<td>core</td>
+		<td><a href="#core">*core*</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 210</td>
+		<td><a href="#cs210">CPSC 210</a></td>
 		<td>Software Construction</td>
-		<td>core</td>
+		<td><a href="#core">*core*</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 213</td>
+		<td><a href="#cs213">CPSC 213</a></td>
 		<td>Introduction to Computer Systems</td>
-		<td>core</td>
+		<td><a href="#core">*core*</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 221</td>
+		<td><a href="#cs221">CPSC 221</a></td>
 		<td>Basic Algorithms and Data Structures</td>
-		<td>core</td>
+		<td><a href="#core">*core*</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 259</td>
+		<td><a href="#cs259">CPSC 259</a></td>
 		<td>Data Structures and Algorithms for Electrical Engineers</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>CPSC 261</td>
+		<td><a href="#cs261">CPSC 261</a></td>
 		<td>Basics of Computer Systems</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>CPSC 301</td>
+		<td><a href="#cs301">CPSC 301</a></td>
 		<td>Computing in the Life Sciences</td>
-		<td>intro</td>
+		<td><a href="#intro">intro</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 302</td>
+		<td><a href="#cs302">CPSC 302</a></td>
 		<td>Numerical Computation for Algebraic Problems</td>
-		<td>da, db, g, in, sc, t</td>
+		<td><a href="#da">da</a>, <a href="#db">db</a>, <a href="#gph">gph</a>, <a href="#int-sys">int-sys</a>, <a href="#sci-cmp">sci-cmp</a>, <a href="#thry">thry</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 303</td>
+		<td><a href="#cs303">CPSC 303</a></td>
 		<td>Numerical Approximation and Discretization</td>
-		<td>da, db, g, sc, t</td>
+		<td><a href="#da">da</a>, <a href="#db">db</a>, <a href="#gph">gph</a>, <a href="#sci-cmp">sci-cmp</a>, <a href="#thry">thry</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 304</td>
+		<td><a href="#cs304">CPSC 304</a></td>
 		<td>Introduction to Relational Databases</td>
-		<td>da, in, sp, s</td>
+		<td><a href="#da">da</a>, <a href="#int-sys">int-sys</a>, <a href="#sftwr">sftwr</a>, <a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 310</td>
+		<td><a href="#cs310">CPSC 310</a></td>
 		<td>Introduction to Software Engineering</td>
-		<td>core</td>
+		<td><a href="#core">*core*</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 311</td>
+		<td><a href="#cs311">CPSC 311</a></td>
 		<td>Definition of Programming Languages</td>
-		<td>db, hci, sp, s</td>
+		<td><a href="#db">db</a>, <a href="#hci">hci</a>, <a href="#sftwr">sftwr</a>, <a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 312</td>
+		<td><a href="#cs312">CPSC 312</a></td>
 		<td>Functional and Logic Programming</td>
-		<td>in</td>
+		<td><a href="#int-sys">int-sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 313</td>
+		<td><a href="#cs313">CPSC 313</a></td>
 		<td>Computer Hardware and Operating Systems</td>
-		<td>core</td>
+		<td><a href="#core">*core*</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 314</td>
+		<td><a href="#cs314">CPSC 314</a></td>
 		<td>Computer Graphics</td>
-		<td>g, hci, sc</td>
+		<td><a href="#gph">gph</a>, <a href="#hci">hci</a>, <a href="#sci-cmp">sci-cmp</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 317</td>
+		<td><a href="#cs317">CPSC 317</a></td>
 		<td>Internet Computing</td>
-		<td>db, sp, s</td>
+		<td><a href="#db">db</a>, <a href="#sftwr">sftwr</a>, <a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 319</td>
+		<td><a href="#cs319">CPSC 319</a></td>
 		<td>Software Engineering Project</td>
-		<td>sp</td>
+		<td><a href="#sftwr">sftwr</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 320</td>
+		<td><a href="#cs320">CPSC 320</a></td>
 		<td>Intermediate Algorithm Design and Analysis</td>
-		<td>core</td>
+		<td><a href="#core">*core*</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 322</td>
+		<td><a href="#cs322">CPSC 322</a></td>
 		<td>Introduction to Artificial Intelligence</td>
-		<td>g, in</td>
+		<td><a href="#gph">gph</a>, <a href="#int-sys">int-sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 340</td>
+		<td><a href="#cs340">CPSC 340</a></td>
 		<td>Machine Learning and Data Mining</td>
-		<td>da, db, in, sc</td>
+		<td><a href="#da">da</a>, <a href="#db">db</a>, <a href="#int-sys">int-sys</a>, <a href="#sci-cmp">sci-cmp</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 344</td>
+		<td><a href="#cs340">CPSC 344</a></td>
 		<td>Introduction to Human Computer Interaction Methods</td>
-		<td>hci, sp</td>
+		<td><a href="#hci">hci</a>, <a href="#sftwr">sftwr</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 349</td>
+		<td><a href="#cs349">CPSC 349</a></td>
 		<td>Honours Research Seminar</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>CPSC 404</td>
+		<td><a href="#cs404">CPSC 404</a></td>
 		<td>Advanced Relational Databases</td>
-		<td>da, db, s</td>
+		<td><a href="#da">da</a>, <a href="#db">db</a>, <a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 410</td>
-		<td>Advanced Relational Databases</td>
-		<td>sp</td>
+		<td><a href="#cs406">CPSC 406</a></td>
+		<td>Computational Optimization</td>
+		<td><a href="#da">da</a>, <a href="#sci-cmp">sci-cmp</a>, <a href="#thry">thry</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 411</td>
+		<td><a href="#cs410">CPSC 410</a></td>
+		<td>Advanced Software Engineering</td>
+		<td><a href="#sftwr">sftwr</a></td>
+	</tr>
+	<tr>
+		<td><a href="#cs411">CPSC 411</a></td>
 		<td>Introduction to Compiler Construction</td>
-		<td>sp, s</td>
+		<td><a href="#sftwr">sftwr</a>, <a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 415</td>
+		<td><a href="#cs415">CPSC 415</a></td>
 		<td>Advanced Operating Systems</td>
-		<td>s</td>
+		<td><a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 416</td>
+		<td><a href="#cs416">CPSC 416</a></td>
 		<td>Distributed Systems</td>
-		<td>db, sp, s</td>
+		<td><a href="#db">db</a>, <a href="#sftwr">sftwr</a>, <a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 418</td>
+		<td><a href="#cs418">CPSC 418</a></td>
 		<td>Parallel Computation</td>
-		<td>s</td>
+		<td><a href="#sys">sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 420</td>
+		<td><a href="#cs420">CPSC 420</a></td>
 		<td>Advanced Algorithm Design and Analysis</td>
-		<td>t</td>
+		<td><a href="#thry">thry</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 421</td>
+		<td><a href="#cs421">CPSC 421</a></td>
 		<td>Introduction to Theory of Computing</td>
-		<td>t</td>
+		<td><a href="#thry">thry</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 422</td>
+		<td><a href="#cs422">CPSC 422</a></td>
 		<td>Intelligent Systems</td>
-		<td>in</td>
+		<td><a href="#int-sys">int-sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 425</td>
+		<td><a href="#cs425">CPSC 425</a></td>
 		<td>Computer Vision</td>
-		<td>g, in</td>
+		<td><a href="#gph">gph</a>, <a href="#int-sys">int-sys</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 426</td>
+		<td><a href="#cs426">CPSC 426</a></td>
 		<td>Computer Animation</td>
-		<td>g, hci</td>
+		<td><a href="#gph">gph</a>, <a href="#hci">hci</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 430</td>
+		<td><a href="#cs430">CPSC 430</a></td>
 		<td>Computers and Society</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>CPSC 444</td>
+		<td><a href="#cs444">CPSC 444</a></td>
 		<td>Advanced Methods for Human Computer Interaction</td>
-		<td>hci, sp</td>
+		<td><a href="#hci">hci</a>, <a href="#sftwr">sftwr</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 445</td>
+		<td><a href="#cs445">CPSC 445</a></td>
 		<td>Algorithms in Bioinformatics</td>
-		<td>t</td>
+		<td><a href="#thry">thry</a></td>
 	</tr>
 	<tr>
-		<td>CPSC 448</td>
+		<td><a href="#cs448">CPSC 448</a></td>
 		<td>Directed Studies in Computer Science</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>CPSC 449</td>
+		<td><a href="#cs449">CPSC 449</a></td>
 		<td>Honour Thesis</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>CPSC 490</td>
+		<td><a href="#cs490">CPSC 490</a></td>
 		<td>Student Directed Seminars</td>
 		<td></td>
 	</tr>
 </table>
-</body>
+</div>
 
+<div id="section2">
 <h3>notes</h3>
 <ul>
-<li>core: one of nine core curriculum that are required by most computer science programs.</li>
-<li>challenge: you can take the <a href="https://www.cs.ubc.ca/students/undergrad/courses-deadlines/cpsc-110-challenge-exam">challenge exam</a> to get an exemption from CPSC 110</li>
-<li>intro: introductory courses for students who don't plan to major in computer science</li>
-<li>da: data analysis</li>
-<li>db: databases</li>
-<li>g: graphics/animation</li>
-<li>hci: human computer interaction</li>
-<li>in: intelligent systems</li>
-<li>sc: scientific computation</li>
-<li>sp: software practices</li>
-<li>s: systems</li>
-<li>t: theory</li>
+<li id="core">*core*: one of eight core curriculum that are required by most computer science programs.</li>
+<li id="chal-exm">chal-exm: you can take the <a href="https://www.cs.ubc.ca/students/undergrad/courses-deadlines/cpsc-110-challenge-exam">challenge exam</a> to get an exemption from CPSC 110</li>
+<li id="intro">intro: introductory courses for students who don't plan to major in computer science</li>
+<li id="da">da: data analysis</li>
+<li id="db">db: databases</li>
+<li id="gph">gph: graphics/animation</li>
+<li id="hci">hci: human computer interaction</li>
+<li id="int-sys">int-sys: intelligent systems</li>
+<li id="sci-cmp">sci-cmp: scientific computation</li>
+<li id="sftwr">sftwr: software practices</li>
+<li id="sys">sys: systems</li>
+<li id="thry">thry: theory</li>
 </ul>
+</div>
+
+<div id="section3">
+<h2>Course Description</h2>
+<h3 id="cs100">CPSC 100 - Computational Thinking</h3>
+<p>Meaning and impact of computational thinking. Solving problems using computational thinking, testing, debugging. How computers work. No prior computing experience required. Not for students with CPSC 110 credit. Students with other computer science transfer credit must consult the department.</p>
+</div><div id="section4">
+<h3 id="cs103">CPSC 103 - Introduction to Systematic Program Design</h3>
+<p>Computation as a tool for systematic problem solving in non-computer-science disciplines. Introductory programming skills. No programming experience expected.</p>
+</div><div id="section3">
+<h3 id="cs110">CPSC 110 - Computation, Programs, and Programming</h3>
+<p>Fundamental program and computation structures. Introductory programming skills. Computation as a tool for information processing, simulation and modeling, and interacting with the world.</p>
+</div><div id="section4">
+<h3 id="cs121">CPSC 121 - Models of Computation</h3>
+<p>Physical and mathematical structures of computation. Boolean algebra and combinations logic circuits; proof techniques; functions and sequential circuits; sets and relations; finite state machines; sequential instruction execution.</p>
+</div><div id="section3">
+<h3 id="cs210">CPSC 210 - Software Construction</h3>
+<p>Design, development, and analysis of robust software components. Topics such as software design, computational models, data structures, debugging, and testing.</p>
+</div><div id="section4">
+<h3 id="cs213">CPSC 213 - Introduction to Computer Systems</h3>
+<p>Software architecture, operating systems, and I/O architectures. Relationships between application software, operating systems, and computing hardware; critical sections, deadlock avoidance, and performance; principles and operation of disks and networks.</p>
+</div><div id="section3">
+<h3 id="cs221">CPSC 221 - Basic Algorithms and Data Structures</h3>
+<p>Design and analysis of basic algorithms and data structures; algorithm analysis methods, searching and sorting algorithms, basic data structures, graphs and concurrency.</p>
+</div><div id="section4">
+<h3 id="cs259">CPSC 259 - Data Structures and Algorithms for Electrical Engineers</h3>
+<p>Advanced procedural programming. Fundamental algorithms for sorting and searching. Data structures including lists, trees, and hash tables. Introduction to scripting languages and file input/output.</p>
+</div><div id="section3">
+<h3 id="cs261">CPSC 261 - Basics of Computer Systems</h3>
+<p>Software architecture, operating systems, and I/O architectures. Relationships between application software, operating systems, and computing hardware; critical sections, deadlock avoidance, and performance; principles and operation of disks and networks.</p>
+</div><div id="section4">
+<h3 id="cs301">CPSC 301 - Computing in the Life Sciences</h3>
+<p>Basic concepts, tools, and techniques for working with scientific data at larger scales, higher speeds, and lower costs that would otherwise be impossible. Applications and examples drawn from the life sciences. No prior computing background is required. Not for credit for students who have credit for any of the following: APSC 160, Computer Science AP, IB Computer Science, EOSC 211, or 3 credits of CPSC beyond CPSC 101.</p>
+</div><div id="section3">
+<h3 id="cs302">CPSC 302 - Numerical Computation for Algebraic Problems</h3>
+<p>Numerical techniques for basic mathematical processes involving no discretization, and their analysis. Solution of linear systems, including analysis of round-off errors; norms and condition number; introduction to iterative techniques in linear algebra, including eigenvalue problems; solution to nonlinear equations.</p>
+</div><div id="section4">
+<h3 id="cs303">CPSC 303 - Numerical Approximation and Discretization</h3>
+<p>Numerical techniques for basic mathematical processes involving discretization, and their analysis. Interpolation and approximation, including splines and least squares data fitting; numerical differentiation and integration; introduction to numerical initial value ordinary differential equations.</p>
+</div><div id="section3">
+<h3 id="cs304">CPSC 304 - Introduction to Relational Databases</h3>
+<p>Overview of database systems, ER models, logical database design and normalization, formal relational query languages, SQL and other commercial languages,data warehouses, special topics.</p>
+</div><div id="section4">
+<h3 id="cs310">CPSC 310 - Introduction to Software Engineering</h3>
+<p>Specification, design, implementation and maintenance of large, multi-module software systems. Principles, techniques, methodologies and tools for computer aided software engineering (CASE); human-computer interfaces, reactive systems, hardware-software interfaces and distributed applications.</p>
+</div><div id="section3">
+<h3 id="cs311">CPSC 311 - Definition of Programming Languages</h3>
+<p>Comparative study of advanced programming language features. Statement types, data types, variable binding, parameter passing mechanisms. Methods for syntactic and semantic description of programming languages.</p>
+</div><div id="section4">
+<h3 id="cs312">CPSC 312 - Functional and Logic Programming</h3>
+<p>Principles of symbolic computing, using languages based upon first-order logic and the lambda calculus. Algorithms for implementing such languages. Applications to artificial intelligence and knowledge representation.</p>
+</div><div id="section3">
+<h3 id="cs313">CPSC 313 - Computer Hardware and Operating Systems</h3>
+<p>Instruction sets, pipelining, code optimization, caching, virtual memory management, dynamically linked libraries, exception processing, execution time of programs.</p>
+</div><div id="section4">
+<h3 id="cs314">CPSC 314 - Computer Graphics</h3>
+<p>Human vision and colour; geometric transformations; algorithms for 2-D and 3-D graphics; hardware and system architectures; shading and lighting; animation. (Consult the Credit Exclusion list within the Faculty of Science section of the Calendar.)</p>
+</div><div id="section3">
+<h3 id="cs317">CPSC 317 - Internet Computing</h3>
+<p>Computer networking, basic communication protocols, network infrastructure and routing. Common application-level protocols and principles associated with developing distributed applications</p>
+</div><div id="section4">
+<h3 id="cs319">CPSC 319 - Software Engineering Project</h3>
+<p>The design, implementation, and test of a large software system, using a team approach.</p>
+</div><div id="section3">
+<h3 id="cs320">CPSC 320 - Intermediate Algorithm Design and Analysis</h3>
+<p>Systematic study of basic concepts and techniques in the design and analysis of algorithms, illustrated from various problem areas. Topics include: models of computation; choice of data structures; graph-theoretic, algebraic, and text processing algorithms.</p>
+</div><div id="section4">
+<h3 id="cs322">CPSC 322 - Introduction to Artificial Intelligence</h3>
+<p>Problem-solving and planning; state/action models and graph searching. Natural language understanding Computational vision. Applications of artificial intelligence.</p>
+</div><div id="section3">
+<h3 id="cs340">CPSC 340 - Machine Learning and Data Mining</h3>
+<p>Models of algorithms for dimensionality reduction, nonlinear regression, classification, clustering and unsupervised learning; applications to computer graphics, computer games, bio-informatics, information retrieval, e-commerce, databases, computer vision and artificial intelligence.</p>
+</div><div id="section4">
+<h3 id="cs344">CPSC 344 - Introduction to Human Computer Interaction Methods</h3>
+<p>Basic tools and techniques, teaching a systematic approach to interface design, task analysis, analytic and empirical evaluation methods.</p>
+</div><div id="section3">
+<h3 id="cs349">CPSC 349 - Honours Research Seminar</h3>
+<p>Students will attend a series of research seminars presented by faculty members, produce a thesis proposal, and choose their honours thesis supervisor. Available to Honours students. Majors students with satisfactory standing may also be permitted to enrol.</p>
+</div><div id="section4">
+<h3 id="cs404">CPSC 404 - Advanced Relational Databases</h3>
+<p>Physical database design, indexing, relational query processing and optimization, transaction processing, concurrency control, crash recovery, data warehouses, data cubes, views, special topics.</p>
+</div><div id="section3">
+<h3 id="cs406">CPSC 406 - Computational Optimization</h3>
+<p>Formulation and analysis of algorithms for continuous and discrete optimization problems; linear, nonlinear, network, dynamic, and integer optimization; large-scale problems; software packages and their implementation; duality theory and sensitivity.</p>
+</div><div id="section4">
+<h3 id="cs410">CPSC 410 - Advanced Software Engineering</h3>
+<p>Specification, design, construction and validation of multi-version software systems.</p>
+</div><div id="section3">
+<h3 id="cs411">CPSC 411 - Introduction to Compiler Construction</h3>
+<p>A practical introduction to lexical analysis, syntactic analysis, type-checking, code generation and optimization. This will be used to design and implement a compiler for a small language.</p>
+</div><div id="section4">
+<h3 id="cs415">CPSC 415 - Advanced Operating Systems</h3>
+<p>Process synchronization and communication schemes, including message-passing and concepts of monitor and serializer. Virtual memory systems management and the problem of information sharing in such systems. The working set principle. Traps and interrupt handling. Elementary queuing theory and its application such as process scheduling, system balancing and load control. File systems and operating system design methodologies.</p>
+</div><div id="section3">
+<h3 id="cs416">CPSC 416 - Distributed Systems</h3>
+<p>Concepts and design of distributed systems. Communication architecture and models for interprocess communication. Process migration, naming, distributed file systems, fault tolerance, and concurrency control.</p>
+</div><div id="section4">
+<h3 id="cs418">CPSC 418 - Parallel Computation</h3>
+<p>Algorithms, architectures, and programming paradigms for parallel computation. Shared memory, message passing, and data parallel architectures and programming models. Parallel algorithms including reduce, scan, and sorting networks. Reasoning about the correctness of parallel programs. Performance analysis and measurement for parallel programs.</p>
+</div><div id="section3">
+<h3 id="cs420">CPSC 420 - Advanced Algorithm Design and Analysis</h3>
+<p>The study of advanced topics in the design and analysis of algorithms and associated data structures. Topics include algorithms for graph-theoretic; algebraic and geometric problems; algorithms on nonsequential models; complexity issues; approximation algorithms.</p>
+</div><div id="section4">
+<h3 id="cs421">CPSC 421 - Introduction to Theory of Computing</h3>
+<p>Characterizations of computability (using machines, languages and functions). Universality, equivalence and Church's thesis. Unsolvable problems. Restricted models of computation. Finite automata, grammars and formal languages.</p>
+</div><div id="section3">
+<h3 id="cs422">CPSC 422 - Intelligent Systems</h3>
+<p>Principles and techniques underlying the design, implementation and evaluation of intelligent computational systems. Applications of artificial intelligence to natural language understanding, image understanding and computer-based expert and advisor systems. Advanced symbolic programming methodology.</p>
+</div><div id="section4">
+<h3 id="cs425">CPSC 425 - Computer Vision</h3>
+<p>Introduction to the processing and interpretation of images. Image sensing, sampling, and filtering. Algorithms for colour analysis, texture description, stereo imaging, motion interpretation, 3D shape recovery, and recognition.</p>
+</div><div id="section3">
+<h3 id="cs426">CPSC 426 - Computer Animation</h3>
+<p>Motion in computer graphics for characters and their environments. Keyframing, inverse kinematics, particle systems, rigid body dynamics, contact and collision, controller-based active motion, motion capture.</p>
+</div><div id="section4">
+<h3 id="cs430">CPSC 430 - Computers and Society</h3>
+<p>Impact of computer technology on society; historical perspectives; social and economic consequences of large-scale information processing systems and automatic control; legal and ethical problems in computer applications. Computers and the individual: machine versus human capabilities, fact and fancy; problematic interface between man and machine.</p>
+</div><div id="section3">
+<h3 id="cs444">CPSC 444 - Advanced Methods for Human Computer Interaction</h3>
+<p>Design and evaluation methodologies and theories; formal models of the user including visual, motor, and information processing; advanced evaluation methods including laboratory experiments and field studies; HCI research frontiers.</p>
+</div><div id="section4">
+<h3 id="cs445">CPSC 445 - Algorithms in Bioinformatics</h3>
+<p>Sequence alignment, phylogenetic tree reconstruction, prediction of RNA and protein structure, gene finding and sequence annotation, gene expression, and biomolecular computing.</p>
+</div><div id="section3">
+<h3 id="cs448">CPSC 448 - Directed Studies in Computer Science</h3>
+<p>Open ordinarily to students in Computer Science with at least a 72% average and the permission of the head of the department or designate. The course may consist of supervised reading, participation in a seminar, and one or more programming projects.</p>
+</div><div id="section4">
+<h3 id="cs449">CPSC 449 - Honour Thesis</h3>
+<p>Under supervision of a faculty member, students investigate a research topic and prepare a thesis.</p>
+</div><div id="section3">
+<h3 id="cs490">CPSC 490 - Student Directed Seminars</h3>
+<p>Self-directed, collaborative studies, in a group-learning environment, initiated and coordinated by senior undergraduate students with the supervision of a faculty advisor. Course structure, enrolment and delivery methods will comply with the "Handbook for Student Directed Seminars".</p>
+</div>
+
+<div id="footer">
+Copyright @ Z.J(f4a0b@ugrad.cs.ubc.ca)
+</div>
+</body>
 </html>

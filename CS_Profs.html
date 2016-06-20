@@ -21,7 +21,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 }
 
 #people tr:nth-child(even){
-	background-color: #f2f2f2;
+	background-color: #F2F2F2;
 }
 
 #people tr:hover{
@@ -34,11 +34,31 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 	background-color: #6495ED;
 	color: white;
 }
+
+#header {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #6495ED;
+	color: black;
+	text-align: left;
+	padding: 5px;
+}
+#footer {
+	background-color: #6495ED;
+	color: black;
+	clear: both;
+	text-align: right;
+	padding: 5px;
+}
 </style>
 </head>
 <body>
+
+<div id="header">
+<h2>People</h2>
+</div>
+
+<div id="section">
 <table id="people">
-	<caption>People</caption>
     <tr>
         <th>Last Name</th>
 		<th>First Name</th>
@@ -59,12 +79,12 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 	</tr>
 	<tr>
 		<td>Aiello</td>
-		<td><a href="https://www.cs.ubc.ca/people/bill-aiello" target="_blank">Bill</a></td>
+		<td><a href="https://www.cs.ubc.ca/people/bill-aiello" target="_blank">William(Bill)</a></td>
 		<td>Professor</td>
 		<td>ICCS 317</td>
 		<td>CPSC 110</td>
 		<td>Networks, Systems, and Security</td>
-		<td></td>
+		<td>Department Head 2005-10</td>
 	</tr>
 	<tr>
 		<td>Allen</td>
@@ -82,7 +102,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>ICCS 223</td>
 		<td>CPSC 302</td>
 		<td>Scientific Computing</td>
-		<td></td>
+		<td>Department Head 1987-88</td>
 	</tr>
     <tr>
 		<td>Belleville</td>
@@ -90,8 +110,8 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>Senior Instructor</td>
 		<td>ICCS 343</td>
 		<td>CPSC 121, CPSC 261, CPSC 313, CPSC 320</td>
-		<td>Computational Geometry, Educational Technologies, Algorithmic Graph Theory, Data Structures</td>
-		<td>He likes teaching</td>
+		<td>Computational Geometry, Educational Technologies, Algorithmic Graph Theory</td>
+		<td>He teaches most CPSC courses</td>
 	</tr>	
 	<tr>
 		<td>Berg</td>
@@ -108,7 +128,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>Assistant Professor</td>
 		<td>ICCS 327</td>
 		<td>CPSC 416, CPSC 527</td>
-		<td>Distributed Systems, Formal Methods, Modeling, Tracing and Analysis of Program behavior</td>
+		<td>Distributed Systems, Formal Methods, Analysis of Program behavior</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -163,7 +183,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>ICCS X551</td>
 		<td></td>
 		<td>DNA Computing, Analysis of Algorithms</td>
-		<td>Previous Department Head, Irish</td>
+		<td>Department Head 2011, Irish</td>
 	</tr>
 	<tr>
 		<td>Evans</td>
@@ -198,7 +218,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>Professor</td>
 		<td>ICCS X561</td>
 		<td>CPSC 421, CPSC 501</td>
-		<td>Theoretical Computer Science, Explicit Constructions, Graph Eignvalues and Expansion</td>
+		<td>Theory, Explicit Constructions, Graph Eignvalues and Expansion</td>
 		<td>Professor in both Computer Science and Mathematics</td>
 	</tr>
 	<tr>
@@ -234,7 +254,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>Associate Professor</td>
 		<td>ICCS X851</td>
 		<td>CPSC 221, CPSC 320</td>
-		<td>Randomized Algorithms, Combinatorial Algorithms, Spectral Graph Theory, Learning Theory</td>
+		<td>Algorithms, Spectral Graph Theory, Learning Theory</td>
 		<td>Speaks Japanese</td>
 	</tr>
 	<tr>
@@ -352,7 +372,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>ICCS 121</td>
 		<td></td>
 		<td>Computational Intelligence</td>
-		<td>Elder</td>
+		<td>Department Head 2000</td>
 	</tr>
 	<tr>
 		<td>MacLean</td>
@@ -397,7 +417,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>ICCS 305</td>		
 		<td></td>
 		<td>Software Engineering</td>
-		<td>Associate Dean</td>
+		<td>Associate Dean, Department Co-Head 2010-11</td>
 	</tr>
 	<tr>
 		<td>Ng</td>
@@ -406,7 +426,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>ICCS 303</td>
 		<td>CPSC 304</td>
 		<td>Data Mining</td>
-		<td></td>
+		<td>Department Co-Head 2010-011</td>
 	</tr>
 	<tr>
 		<td>Pai</td>
@@ -468,7 +488,7 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td>Professor of Teaching</td>
 		<td>ICCS 307</td>
 		<td>CPSC 121, CPSC 301, CPSC 404</td>
-		<td>Educational Technologies, Software Specification, Software Verification, Applications of Formal Logics</td>
+		<td>Educational Technologies, Software Specification, Software Verification</td>
 		<td>Greek</td>
 	</tr>
 	<tr>
@@ -503,10 +523,15 @@ a:active {color: RoyalBlue; backgroud-color:transparent; text-decoration:underli
 		<td><a href="http://www.cs.ubc.ca/~wolf/" target="_blank">Steve</a></td>
 		<td>Professor of Teaching</td>
 		<td>ICCS 239</td>
-		<td>CPSC 110</td>
+		<td>CPSC 110, CPSC 221, CPSC 312</td>
 		<td>Educational Technologies, Human-Computer Interaction, Artificial Intelligence</td>
-		<td></td>
+		<td>He teaches most CPSC courses</td>
 	</tr>
 </table>
+</div>
+
+<div id="footer">
+Copyright @ Z.J(f4a0b@ugrad.cs.ubc.ca)
+</div>
 </body>
 </html>
